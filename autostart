@@ -1,0 +1,26 @@
+# Wallpaper
+(nitrogen --restore) &
+
+# tint2
+(tint2 -c ~/.config/tint2/Numix_tint2/dark_dock/tint2rc) &
+
+# Sound applet
+(sleep 1s && /usr/bin/pa-applet) &
+
+# Keyboard layout
+(sleep 1s && fbxkb) &
+
+# Make Caps an additional Control key
+(sleep 1s && setxkbmap -option caps:ctrl_modifier) &
+
+# Alt + Shift to toggle keyboad layout
+(sleep 1s && setxkbmap -layout us,ara -option grp:alt_shift_toggle) &
+
+# Battery monitor
+(sleep 1s && dualtidy) &
+
+# Clipboard manager
+(sleep 1s && parcellite) &
+
+# Kupfer
+(sleep 1s && kupfer) &
