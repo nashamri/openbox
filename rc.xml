@@ -119,12 +119,12 @@
        use obconf if you want to change these without having to log out
        and back in -->
     <number>4</number>
-    <firstdesk>1</firstdesk>
+    <firstdesk>α</firstdesk>
     <names>
-      <name>1</name>
-      <name>2</name>
-      <name>3</name>
-      <name>4</name>
+      <name>α</name>
+      <name>β</name>
+      <name>γ</name>
+      <name>δ</name>
     </names>
     <popupTime>1</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
