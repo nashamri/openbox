@@ -119,12 +119,12 @@
        use obconf if you want to change these without having to log out
        and back in -->
     <number>4</number>
-    <firstdesk>α</firstdesk>
+    <firstdesk>&#x3B1;</firstdesk>
     <names>
-      <name>α</name>
-      <name>β</name>
-      <name>γ</name>
-      <name>δ</name>
+      <name>&#x3B1;</name>
+      <name>&#x3B2;</name>
+      <name>&#x3B3;</name>
+      <name>&#x3B4;</name>
     </names>
     <popupTime>1</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -262,6 +262,12 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
+    <keybind key="A-f">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+    <keybind key="W-C-Up">
+      <action name="ToggleAlwaysOnTop"/>
+    </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
@@ -338,21 +344,21 @@
       </action>
     </keybind>
     <!-- Multimedia keys -->
-    <keybind key="XF86AudioRaiseVolume">
-      <action name="Execute">
-        <command>amixer -D pulse set Master 5%+ unmute</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioLowerVolume">
-      <action name="Execute">
-        <command>amixer -D pulse set Master 5%- unmute</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioMute">
-      <action name="Execute">
-        <command>amixer set Master toggle</command>
-      </action>
-    </keybind>
+    <!-- <keybind key="XF86AudioRaiseVolume"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>amixer -D pulse set Master 5%+ unmute</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="XF86AudioLowerVolume"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>amixer -D pulse set Master 5%- unmute</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="XF86AudioMute"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>amixer set Master toggle</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <!-- Windows snapping -->
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
@@ -862,9 +868,6 @@
       <skip_taskbar>no</skip_taskbar>
       <desktop>3</desktop>
     </application>
-    <application class="Firefox" name="Navigator" role="browser" type="normal">
-      <desktop>1</desktop>
-    </application>
     <application class="Evolution" name="evolution" role="*" type="normal">
       <desktop>4</desktop>
     </application>
@@ -872,11 +875,11 @@
       <decor>no</decor>
     </application>
     <application class="Kupfer.py" name="kupfer.py" role="*" type="utility">
-        <position force="yes">
-            <x>center</x>
-            <y>center</y>
-            <layer>above</layer>
-        </position>
+      <position force="yes">
+        <x>center</x>
+        <y>center</y>
+        <layer>above</layer>
+      </position>
     </application>
   </applications>
 </openbox_config>

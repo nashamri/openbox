@@ -20,7 +20,7 @@
 (sleep 1s && dualtidy) &
 
 # Clipboard manager
-(sleep 1s && parcellite) &
+#(sleep 1s && parcellite) &
 
 # Kupfer
 (sleep 1s && kupfer) &
